@@ -57,6 +57,11 @@ body {
   }
 }
 
+.active {
+    background-color: #A30000;
+    color: white;
+}
+
 /* .navigation ul {
     font-family: 14px Helvetica, sans-serif;
     text-transform: uppercase;
