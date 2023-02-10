@@ -1,0 +1,187 @@
+/* CSS stylings */
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+.skip {
+    position: absolute;
+    left: -1000px;
+}
+
+.skip:focus {
+    left: 0px;
+}
+
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  background: black;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: white;
+  color: black;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/* .navigation ul {
+    font-family: 14px Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0px 10px;
+    vertical-align: top;
+}
+
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: black;
+    size: 20px;
+
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+} */
+
+h1 {
+    font-family: Figtree, sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: Figtree, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+p {
+    padding-bottom: 5px;
+    font-family: Helvetica, sans-serif;
+}
+
+img {
+    border: 5px dashed lightgrey;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+img:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2);
+}
+
+dt {
+    font-family: Figtree, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+dd {
+    font-style: oblique;
+    padding-top: 10px;
+}
+
+dd p {
+    font-style: normal;
+}
+
+footer {
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    padding: 10px 0px;
+    background-color: black;
+    color: red;
+}
+
+.grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.grid div {
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0px -8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grid div:hover {
+    box-shadow: 0px 8px 16px 0px rgba(6, 82, 73, 0.2), 0px -8px 16px 0 rgba(6, 82, 73, 0.2);
+}
+
+.grid img {
+    padding: 10px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid p {
+    padding: 0px 15px 10px;
+}
